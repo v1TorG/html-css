@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vitor tests</title>
+</head>
+<body>
+    <h1>reproduzir video</h1>
+    <video width="500" controls>
+        <source src="img-msc/Grounded _ Xbox Cloud Gaming (Beta) em  Xbox.com - Google Chrome 2024-01-24 17-18-49 - Trim.mp4" type="video/mp4">
+    </video>
+<br>
+    <h1>adicionar videos do youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/0zunaGFdGSg?si=YAA1ggceNw-w5Ju_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br>
+    <h1>reproduzindo audio</h1>
+    <p>colocar musica</p>
+   <audio src="img-msc/lazaro.mp3" controls autoplay></audio>
+    
+   
+    <h1>imagem dinamica</h1>
+    <p>imagem ira diminuir ou aumentar de acordo com o tamanho da tela</p>
+
+    <picture><!--imagens baixadas-->
+        <source media="(max-width: 790px)" srcset="imagens/P.png"
+        type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/M.png"
+        type="image/png">
+        <img src="imagens/G.png" alt="Imagem flexivel">
+    </picture>
+    <hr>
+    <picture><!--imagens web-->
+        <source media="(max-width: 780px)" srcset="https://pbs.twimg.com/profile_images/1744393322418802688/-ZF7VwbA_400x400.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2021/11/04/one-piece-1000.png" type="image/png">
+        <img src="https://t.ctcdn.com.br/PewL4nrlu4015q7VVj_VIDNf5Ss=/1024x576/smart/i527855.jpeg">
+    </picture>
+    
+</body>
+</html>

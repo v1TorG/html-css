@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--favicon = incone do documento-->
+    <title>anotações-curso em video</title>
+
+    <style>
+        div{
+            display: inline-block;
+            background-color: lavender;
+            border: 1px black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover{
+            background-color: aquamarine;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>usando links externos</h1>
+    <p>você pode acessar o <a href="https://www.youtube.com/@LivesAlanzoka" target="_blank" rel="external">canal alankoza</a></p>
+    <p>você pode acessar o <a href="https://www.youtube.com/@CellbitLives" target="_blank" rel="external">canal cellbit</a></p>
+    <!--target="_blank" rel="external serve pra abrir o link em outra aba"-->
+    <h1>abrir uma pagina do site</h1>
+    <p>ir para outra pagina do mesmo site <a href="pag02/pag002.html"> segunda pagina</a></p>
+    <!--para ir pra outra pagina q esta em outra pagina, precisa colocar o nome da pasta na frente junto com / -->
+    <h1>baixar um arquivo</h1>
+    <ol>
+        <li><a href="pag02/24_B_008643.pdf" download="24_B_008643.pdf" type="application/pdf">baixar arquivo em pdf</a></li>
+    </ol>
+
+
+    <br>
+    <h2>lista ordenada</h2><!--sequencia-->
+    <ol type="1"> <!--typer escolhe o tipo -->
+        <li>acordar</li>
+        <li>escovar os dentes</li>
+        <li>olhar o celular</li>
+        <li>comer</li>
+        <li>pegar onibus pra facul</li>
+    </ol>
+
+    <h2>lista não ordenada</h2>
+    <ul>
+        <li>abacaxi</li>
+        <li>banana</li>
+        <li>pera</li>
+        <li>uva</li>
+        <li>maça</li>
+    </ul>
+    <h2>lista combinadas/juntas</h2>
+    <ol>
+        <li>jogos</li>
+        <ol type="a">
+            <li>fortnite</li>
+            <li>sea</li>
+            <ul>
+                <li>lorotas</li>
+                <li>navegar</li>
+            </ul>
+            <li>grounded</li>
+        </ol>
+        <li>frutas</li>
+        <ul>
+            <li>melão</li>
+            <li>banana</li>
+            <li>pera</li>
+        </ul>        
+    </ol>
+    <h2>lista de definição</h2>
+    <dl>
+        <dt>descrição</dt>
+        <dd>definição</dd>
+        <dt>HTML</dt>
+        <dd>linguagem de marcação para a criação de conteudo em site</dd>
+    </dl>
+
+
+    <h1>br: pula <br> linha</h1>
+   
+    <h>hr: faz <hr>uma linha</h>
+    
+    <h1>tamanho 1</h1>
+    <h2>tamanho 2</h2>
+    <h3>tamanho 3</h3>
+    <h4>tamanho 4</h4>
+    <h5>tamanho 5</h5>
+    <h6>ultimo tamanho</h6>
+    <p>paragrafo normal</p>
+    <br>
+
+    <p>indereço:<address>av.dioguinho</address></p>
+    <br>
+
+    <p>termo em <strong>destaque</strong> - semantico</p>
+    <p>termo em <em>enfase</em> - semantico</p>
+    <p>termo em <b>megrito</b></p>
+    <p>termo em <i>italico</i></p>
+    <p>texto em <ins>inserido</ins> - semantica</p>
+    <p>texto em <del>deletado</del> - semantica</p>
+    <p>texto em <sup>sobrescrito</sup> ex: x<sup>2</sup>+50   - semantica</p>
+    <p>texto em <sub>subrescrito</sub> ex: H<sub>2</sub>O   - semantica</p>
+    <p>texto <mark>marcado</mark></p>
+    <br>
+
+    <h1>exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        PASSE O MOUSE AQUI
+        <p>texto escondido</p>
+
+    
+    </div>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+
+    <p>imagem - URL</p>
+    <img src="https://cdn-icons-png.flaticon.com/256/5968/5968267.png">
+   
+    <p>imagem baixada</p>
+    <img src="HTML5_logo_and_wordmark.svg.png">
+
+</body>
+</html>

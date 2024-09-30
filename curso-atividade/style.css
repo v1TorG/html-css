@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poetsen+One&display=swap');
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*height: 100%;*/
+}
+body {
+    background-image: linear-gradient(90deg, #9AEBA3,#DAFDBA);
+}
+main{
+    background-color: white;
+    box-shadow: 05px 05px 15px #01203077;
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+h1#principal{
+    color: #117099;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: rgb(150, 233, 205);
+    font-weight: 100;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #48a7d662;
+}
+h1{
+    color: #177ca7;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px 2px #01395562;
+}
+h2{
+    color:#9FC131;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+p{
+    text-align: justify;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+.facil{
+    color: #88eb4e;
+}
+
+.medio{
+    color: #eedf14ef;
+}
+    
+.dificil{
+    color: #f73131;
+}

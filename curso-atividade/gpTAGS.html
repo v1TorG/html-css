@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(37, 37, 37);
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+
+        header{
+            background-color: rgb(217, 231, 231);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1{
+            /*inset = sobra dentro*/
+            box-shadow: inset  2px 1px 14px 6px rgba(8, 8, 8, 0.616);
+            border: 20px solid black;
+            border-image-source: url(testBORDA.png);
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+        }
+
+        main{
+            background-color: rgb(218, 231, 231);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: rgb(70, 69, 67);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.384);
+        } 
+        nav > a{
+            color:rgb(169, 140, 207);
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        article{
+            background-color: rgb(146, 156, 153);
+            padding: 1px 10px 10px 10px
+        }
+        article > aside{
+            background-color: rgb(115, 116, 117);
+        }
+
+        footer{
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            text-align: center;
+            padding: 1px;
+        }
+        footer > p{
+            margin: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="estudo">
+            <article>
+            <h2>aprendendo grouping tags</h2>
+            <p>colocando cabecalho, assunto principal e rodape<br>
+               começamos com header = nosso cabecalho, primeira parte do site, inicio.<br>
+               depois vem o main = assunto principal, segunda parte do site, medio.<br>
+               finalizando com footer = rodape, ultima parte do site, final.<br>
+            </p>
+            <aside>
+                <p>estudo escrito por Vitinho web</p>
+            </aside>
+        </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>vitinho programador web</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(217, 243, 241);
+}
+h1 {
+    color: rgb(21, 5, 116);
+    background-color: rgb(86, 202, 218);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    color: rgb(255, 72, 0);
+}
+p {
+    text-align: justify;
+}
