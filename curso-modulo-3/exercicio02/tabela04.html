@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Tabela Completa</h1>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+
+        <thead>
+            <tr> <!-- col = qnd precisa usar apenas uma coluna
+                      colgroup = qnd precisa usar mais de uma coluna-->
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row"> Total </th>
+                <td> 18</td>
+            </tr>
+        </tfoot>
+                <!-- row = qnd usa apenas uma linha
+                     rowgroup = qnd usa mais de uma linha-->
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Duda maravilhosa</td>
+                <td>Jardim de meteoros</td>
+                <td>Beleza verdadeira</td>
+                <td>Harry Potter</td>
+            </tr>
+            <tr>
+                <td>Dudinha linda</td>
+                <td>Harry Potter</td>
+                <td>Meteor Gardem</td>
+                <td>Barbie</td>
+            </tr>
+            <tr>
+                <td>Vitoria</td>
+                <td>Sherk</td>
+                <td>Barbie</td>
+                <td>Vida de inseto</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Paulo</td>
+                <td>Velozes furiosos</td>
+                <td>Top Gun</td>
+                <td>Flash</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Batman</td>
+                <td>Vingadores</td>
+                <td>Naruto</td>
+            </tr>
+            <tr>
+                <td>Vitor</td>
+                <td>One Piece</td>
+                <td>Homem aranha</td>
+                <td>Kimetsu</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
