@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+
+
+        /*
+            flex-direction: row;  --> direção
+            flex-wrap: wrap;   --> onde quebra
+            junção dos dois -->  flex-flow: row nowrap;
+            */
+
+        .container{
+            background-color: burlywood;
+            height: 200px;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+            
+        }
+
+          /*
+        EIXOS (axis)
+        flex-direction:row;
+        
+                              main-exis
+                   -------------------------------> 
+                   |   __________________________
+        croos-exis |   | O O O O O O            |
+                   |   |________________________|
+                   v
+        
+        flex-direction:row-reverse;
+
+                              main-exis
+                    <------------------------------ 
+                      __________________________  |
+                      |            O O O O O O |  | croos-exis
+                      |________________________|  |
+                                                  v
+        
+        flex-direction:column;                 flex-direction:column-reverse;
+                    
+                     cross-exis                 cross-exis 
+                    ---------->                ---------->
+                    |  _____                    |  _____
+                    |  | O |                    |  | O |
+                    |  | O |                    |  | O |
+                    |  | O |                    |  | O |
+          main-exis |  | O |          main-exis |  | O |
+                    |  | O |                    |  | O |
+                    |  |   |                    |  |   |
+                    |  |   |                    |  |   |
+                    |  |   |                    |  |   |
+                    |  |___|                    |  |___|
+                    v                           v
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">exemplo de bloco A</div>
+        <div class="item">exemplo de bloco B</div>
+        <div class="item">exemplo de bloco C</div>
+        <div class="item">exemplo de bloco D</div>
+        <div class="item">exemplo de bloco E</div>
+        <div class="item">exemplo de bloco F</div>
+        <div class="item">exemplo de bloco G</div>
+
+    </div>
+
+    
+</body>
+</html>
