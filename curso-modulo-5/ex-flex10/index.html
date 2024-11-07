@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        
+        .container{
+            background-color: burlywood;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            
+            /*basis = tamanho em q o flex vai fazer efeito*/
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+        }
+
+
+        /*teste mudando o flex-grow = tamanho crescendo/aumentando*/
+
+        /*aumentando o primeiro*/
+        #a{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #b{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        #c{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        /*aumentando o segundo*/
+        #aa{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        #ab{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #ac{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        /*aumentando o terceiro*/
+        #ba{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        #bb{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        #bc{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+
+         /*teste mudando o flex-shrink= tamanho diminuindo/espremendo*/
+
+        #Aa{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #Ab{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        #Ac{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        #Ba{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        #Bb{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #Bc{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        #Ca{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        #Cb{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        #Cc{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <p>mudando o <strong>flex-grow</strong> = aumentando</p>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="item" id="aa">A</div>
+        <div class="item" id="ab">B</div>
+        <div class="item" id="ac">C</div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="item" id="ba">A</div>
+        <div class="item" id="bb">B</div>
+        <div class="item" id="bc">C</div>
+    </div>
+
+    <p>mudando o <strong>flex-shrink</strong> = diminuindo</p>
+    <div class="container">
+        <div class="item" id="Aa">A</div>
+        <div class="item" id="Ab">B</div>
+        <div class="item" id="Ac">C</div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="item" id="Ba">A</div>
+        <div class="item" id="Bb">B</div>
+        <div class="item" id="Bc">C</div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="item" id="Ca">A</div>
+        <div class="item" id="Cb">B</div>
+        <div class="item" id="Cc">C</div>
+    </div>
+</body>
+</html>
